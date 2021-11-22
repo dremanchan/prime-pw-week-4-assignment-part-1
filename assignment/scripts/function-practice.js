@@ -73,9 +73,25 @@ function getLast( array ) {
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
+function findValue(arr, val) {
+  for (i = 0; i < arr.length; i++) {
+      if (arr[i] === val) {
+          return true;
+      }
+  }
   
+  return false;
 }
+
+let arr = [5, 10, 15, 20, 25, 30];
+
+find = 10;
+exists = findValue(arr, find);
+console.log("The value " +  find + " exists in the array: " + exists);
+
+find = 13
+exists = findValue(arr, find);
+console.log("The value " +  find + " exists in the array: " + exists);
 
 // ----------------------
 // Stretch Goals
