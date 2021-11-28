@@ -17,26 +17,26 @@ console.log(hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name = Bob) {
-  return console.log ('Hello,', name);
+  return ('Hello' + ' ' + name);
 }
 // Remember to call the function to test
-helloName("Bob");
+console.log(helloName("Bob"));
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber, secondNumber) {
-  console.log(firstNumber + secondNumber);
+  return (firstNumber + secondNumber);
   // return firstNumber + secondNumber;
 }
 
-addNumbers(3, 10);
+console.log(addNumbers(3, 10));
 
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(num1, num2, num3 ){
-  console.log(num1 * num2 * num3);
+  return (num1 * num2 * num3);
 
 }
-multiplyThree(2, 3, 10);
+console.log(multiplyThree(2, 3, 10));
 
 
 // 5. Function that will return true if a number is positive, 
@@ -85,11 +85,11 @@ function findValue(arr, val) {
 
 let arr = [5, 10, 15, 20, 25, 30];
 
-find = 10;
+var find = 10;
 exists = findValue(arr, find);
 console.log("The value " +  find + " exists in the array: " + exists);
 
-find = 13
+var find = 13
 exists = findValue(arr, find);
 console.log("The value " +  find + " exists in the array: " + exists);
 
